@@ -1,35 +1,36 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: #000000;
+	background: #ffffff;
 }
 header{
 	width: 100%;
 	height: 70px;
-	background-color: black;
+	background-color:#00CCCC ;
 }
 h1{
 	font-size: 35px;
 	font-weight: bolder;
-	color: white;
+	color: black;
 }
 h2{
 	font-size: 20px;
 	font-weight: bolder;
-	color: white;
+	color: black;
+
 }
 p{
 	font-size: 15px;
 	font-weight: bolder;
-	color: white;
+	color: black;
 }
 p1{
   font-size: 1px;
   font-weight: bolder;
-  color: white;
+  color: black;
 }
 #footer{
-  background-color: #000000;
+  background-color: #fff;
   position: relative;
   height: 20px;
   margin-top: 600px;
@@ -53,24 +54,24 @@ li{
 }
 a{
 	text-align: center;
-	color: #FFFFFF;
+	color: #003333;
 	text-decoration: none;
 	font-family: 'Open Sans' , sabs-serif;
 	font-size: 1.2vw;
 }
 a:hover{
-	color: #006666;
+	color: #FFE5CC;
 	transition: 0.5s;
 }
 a1{
   text-align: center;
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
   font-family: 'Open Sans' , sabs-serif;
   font-size: 1.2vw;
 }
 a1:hover{
-  color: #808080;
+  color: #00CCCC;
   transition: 0.5s;
 }
 .slidershow{
@@ -133,80 +134,6 @@ input[name="r"]{
   margin-left: -40%;
 }
 
-
-#form {
-  position: absolute;
-  width: 200px;
-  margin: 50px auto 100px auto;
-}
-
-input {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  width: 470px;
-  height: 46.5px;
-  padding: 0px 15px 0px 15px;
-  
-  background: transparent;
-  outline: none;
-  color: #ffffff;
-  
-  border: solid 3px #ffffff;
-  border-bottom: none;
-  
-
-}
-
-input:hover {
-  background: #000000;
-  color: #ffffff;
-}
-
-textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 155px;
-  max-height: 250px;
-  padding: 15px;
-  
-  background: transparent;
-  outline: none;
-  
-  color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  
-  border: solid 3px #ffffff;
-  
-
-}
-
-textarea:hover {
-  background: #000000;
-  color: #ffffff;
-}
-
-#submit {
-  width: 470px;
-  
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-  
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  color: #ffffff;
-  
-  outline:none;
-  cursor: pointer;
-  
-  border: solid 5px #ffffff;
-
-}
-
-#submit:hover {
-  color: #b3aca7;
-}
-
 table{
   width: 1000px;
 
@@ -215,97 +142,4 @@ td{
   padding: 15px;
 }
 
-.main {
-        background-color: #FFFFFF;
-        width: 400px;
-        height: 400px;
-        margin: 7em auto;
-        border-radius: 1.5em;
-        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
-    }
-    
-.sign {
-        padding-top: 40px;
-        color: black;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: bold;
-        font-size: 23px;
-    }
-    
-.un {
-    width: 76%;
-    color: rgb(38, 50, 56);
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    background: rgba(136, 126, 126, 0.04);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    margin-left: 46px;
-    text-align: center;
-    margin-bottom: 27px;
-    font-family: 'Ubuntu', sans-serif;
-    }
-    
-form.form1 {
-        padding-top: 40px;
-    }
-    
-    .pass {
-            width: 76%;
-    color: black;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    background: rgba(136, 126, 126, 0.04);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    margin-left: 46px;
-    text-align: center;
-    margin-bottom: 27px;
-    font-family: 'Ubuntu', sans-serif;
-    }
-    
-   
-    .un:focus, .pass:focus {
-        border: 2px solid rgba(0, 0, 0, 0.18) !important;
-        
-    }
-    
-.submit {
-      cursor: pointer;
-        border-radius: 5em;
-        color: #fff;
-        background: black;
-        border: 0;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-left: 35%;
-        font-size: 13px;
-        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-    }
-    
-    .forgot {
-        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #E1BEE7;
-        padding-top: 15px;
-    }
-    
-    @media (max-width: 600px) {
-        .main {
-            border-radius: 0px;
-        }
-        
+
