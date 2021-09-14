@@ -1,79 +1,55 @@
 <?php
-	session_start();
+	include_once 'header.php';
 ?>
+<title>SIGN UP</title>
+<link rel="stylesheet" href="CSS/formstyle.css">
+<h1>SIGN UP</h1>
 
-	<head>
-		<meta charset="utf-8">
-		<title>SIGN UP|The Wild Vet</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-	</head>
-	<header>
-		<nav>
-			<a href="home.php"><label class="logo">THE WILD VET</label></a>
-			<ul>
-				<li><a href="home.php">HOME</a></li>
-				<li><a href="ourServices.php">OUR SERVICES</a></li>
-				<li><a href="aboutOurClinic.php">ABOUT OUR CLINIC</a></li>
-				<li><a href="contactUs.php">CONTACT US</a></li>
-				<li><a href="bookNow.php">BOOK NOW</a></li>
-				<?php
-					if (isset($_SERVER["useruid"])) {
-						echo "<li><a href='myAccount.php'>MY ACCOUNT</a></li>";
-						echo "<li><a href='logout.inc.php'>LOG OUT</a></li>";
-					}
-					else{
-						echo "<li><a href='signUp.php'>SIGN UP</a></li>";
-						echo "<li><a href='logIn.php'php>LOG IN</a></li>";
-					}
-				?> 
-			</ul>
-		</nav>
-	</header>
-	<section class="signup-form">
-		<h1>SIGN UP</h1>
-		<div class="signup-form-form">
-		<form action="signup.inc.php" method="post">
+<section class="signup-form">
+
+<h2 style="text-align:center;">Sign up with us now!</h2>
+
+	<div class="signup-form-form">
+		
+		<form action="signup.inc.php" method="post" style="text-align:center;">
 			<input type="text" name="name" placeholder="Full name">
-			<input type="text" name="email" placeholder="Email...">
-			<input type="text" name="uid" placeholder="Username">
-			<input type="password" name="pwd" placeholder="Password">
-			<input type="password" name="pwdrepeat" placeholder="Repeat password">
-			<button type="submit" name="submit" >Sign Up</button>
+			<br><input type="text" name="email" placeholder="Email...">
+			<br><input type="text" name="uid" placeholder="Username">
+			<br><input type="password" name="pwd" placeholder="Password">
+			<br><input type="password" name="pwdrepeat" placeholder="Repeat password">
+			<br><button type="submit" name="submit" >Sign Up</button>
 		</form>
-		</div>
-<?php
+		
+	</div>
+	
+	<section style="text-align:center;">
+	<?php
 	if (isset($_GET["error"])) {
 		if ($_GET["error"] == "emptyinput") {
-		echo "<p>Fill in all fields!</p>";
+			echo "<p>!!PLEASE FILL IN ALL FIELDS!!</p>";
 
 		}
 		else if ($_GET["error"] == "invaliduid") {
-			echo "<p>Choose a proper username!</p>";
+			echo "<p>!!PLEASE CHOOSE ANOTHER USERNAME!!</p>";
 		}
 		else if ($_GET["error"] == "invalidemail") {
-			echo "<p>Choose a proper email!</p>";
+			echo "<p>!!PLEASE CHOOSE ANOTHER E-MAIL!!</p>";
 		}	
 		else if ($_GET["error"] == "passwordsdontmatch") {
-			echo "<p>Passwords doesn't match!</p>";
+			echo "<p>!!PASSWORD NOT SAME, PLEASE ENTER THE SAME PASSWORD!!</p>";
 		}
 		else if ($_GET["error"] == "stmtfailed") {
-			echo "<p>Something went wrong, try again!</p>";
+			echo "<p>!!ERROR, PLEASE TRY AGAIN!!</p>";
 		}
 		else if ($_GET["error"] == "usernametaken") {
-			echo "<p>SUsername already taken!</p>";
+			echo "<p>!!USENAME TAKEN!!</p>";
 		}
 		else if ($_GET["error"] == "none") {
-			echo "<p>You have signed up!</p>";
+			echo "<p>!!YOU HAVEN'T SIGNED UP!!</p>";
 		}
 	}
-?>
-	</section>
-	<section>
-		<h2>Sign up with us now! :)</h2>
-
+	?>
 	</section>
 
-
+</section>
+	
